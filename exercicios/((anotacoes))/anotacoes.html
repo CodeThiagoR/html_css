@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINHAS ANOTAÇÕES</title>
+</head>
+<body>
+
+<!--
+    github.com/gustavoguanabara
+    gustavoguanabara.github.io
+-->
+
+<HEAD> CONFIGURAÇÕES DO SITE
+<BODY> INFORMAÇÕES DO SITE
+
+<!-- <TAGS> -->
+
+<HTML> INICIA (hyper text marcap language)
+<header> cabeçalho
+<h1> título
+<h2> subtítulo
+<hr> cria uma linha horizontal
+<strong> Negrito de maneira semântica
+<em> Dá ênfase ao texto em itálico
+<mark> Serve como um marca texto <mark style="background-color: nomedacor;"> ou por estilo em CSS
+<small> texto pequeno
+<del> texto excluído
+<ins> texto sublinhado
+<sup> Sobscrito
+<sub> Substrito
+<code> fonte mono espaçada
+<pre> indentações, quabrade linhas e indentações (usado com o code)
+<q> coloca "" no sentido de citação
+<blockquote> citação de trechos grandes dentro de blockquote cite="cole o link da citação"
+<abbr> Abreviação
+<hgroup> agrupa
+<p> paragrafo
+--> &lt &gt - usar escrito | ex: &ltp&gt
+<img scr= " "> imagem
+<br> quebra de linha (break row)
+<wbr/> quebra de sílabas
+&shy; quebra de sílabas com hpifens (Soft Hyphen)
+&nbsp; (non-breaking space)&lt;
+<span style="text-decoration:  palavra aqui;" (underline, none, overline, line-through)
+<span style="font-weight: palavra aqui; "> quantidade de negrito (normal, bold, bolder) (100 a 900)
+<h2 style="text-align: center"> </h2> (left, right, justify) (alinhamento)
+<h2 style="text-align: justify; text-indent: 50px"> </h2> (Espaço do paragrafo)
+<sub> subscrito
+<sup> sobscrito
+<code> formata código
+<body style="background-color: red;"> (cores de fundo)
+<style>
+
+	body {
+             background-color: skyblue;
+             color: rgb(0, 0, 0); (hsl)(#)
+             color: rgba(0, 0, 0, 0.5); transparência 
+             }
+
+<figure>
+<figcapture> coloca legenda na imagem 
+<link> liga o arquivo html ao css
+<link rel="stylesheet"> folha de estilo
+href (hypertext reference) referencia a hipertexto (chamar texto de fora)  
+<a> âncora
+/*   */ Colocar comentários
+
+/* <TAGS> */  
+
+/*---------------------------------------------------------------------------------------------------------*/
+    
+/* IMAGENS */
+
+images /  google / direitos
+pexels | freepik | unsplash
+no studio code (ctrl + espaço) em src
+URL -> link único que evidencia objetos na internet
+favicon (formato ideal ico) (iconarchive.com \ favicon.io | página de ícones) (favicon.cc cria um ícone)
+ÍCONE - em head acima de tittle -> linkfavicon
+img (para aplicar a imagem)
+src (caminho da imagem)
+alt (descrição para melhorar a busca pela imagem)
+
+/*IMAGEM SE ADAPTANDO AO TAMANHO DA TELA*/
+	<picture>
+        <source media="(max-width: 750px)" srcset="images/cod_p.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="images/cod_m.png" type="image/png">
+        <img src="images/cod_g.png" alt="Foto Dinâmica maior">
+    </picture>
+	
+/* IMAGENS */
+
+/*---------------------------------------------------------------------------------------------------------*/
+    
+/* ÁUDIO E VÍDEO */
+
+<audio preload"metadata" controls autoplay loop>
+    ou
+	<audio>
+		<source src="" type="audio/mpeg"(para mp3)>
+		<source src="" type="audio/wav"(para wav) (evitar esse formato)>
+		<source src="" type="audio/ogg"(para ogg)>
+	</audio>
+
+conversor de vídeo -> handbrake
+vimeo caso o vídeo seja só para assinantes
+
+    COLOCAR CAPA NO VÍDEO
+	<video poster="images/capa.png" src="midia/Star2.mp4" width="560px" controls loop></video>
+
+    INSERIR VÍDEO DO YOUTUBE
+    Visitar o vídeo -> compartilhar -> incorporar -> copiar
+
+/* ÁUDIO E VÍDEO */
+
+/*---------------------------------------------------------------------------------------------------------*/
+    
+/* LISTAS */
+     *ex009*
+
+<ol> listas ordenadas
+<ol type="tipo da lista" start="define o começo">
+<ul> lista NÃO ordenadas
+<li> (dentro de ol) ítem de lista
+<dl> lista de definição
+<dt> termo
+<dd> descrição
+
+/* LISTAS */
+
+/*---------------------------------------------------------------------------------------------------------*/
+    
+/* LINKS */
+-> ex010 <-
+	 
+	<a href="https://www.youtube.com/" target="_blank" rel="external">YouTube</a>!
+
+	<a âncora href="endereço do site completo" target="_blank" (abre em outra aba) rel="mostra que é um link externo">
+	rel="nofollow" (não dar o aval para o mecânismo de buscar seguir)
+	rel="next" (indica próxima página)
+	target="_self" (não obrigatório)
+
+	em href para voltar uma pasta coloque ../
+
+/*DOWNLOADS*/
+<a href="str" download="" type=""
+o type de cada arquivo a gente encontra em https://www.iana.org/assignments/media-types/media-types.xhtml
+
+/* LINKS */
+
+/*---------------------------------------------------------------------------------------------------------*/
+    
+/* ATALHOS VISUAL STUDIO CODE */
+
+-> ctrl + shift + p (envelopar) -> >abb (wrap with abbreviation)
+-> selecionando texto ou linha (TAB) avança identação | (SHIFT+TAB) volta identação
+-> segurar o ALT e clicar no meio do string faz selecionar e alterar VÁRIOS ao mesmo tempo
+
+/* ATALHOS VISUAL STUDIO CODE */
+
+/*---------------------------------------------------------------------------------------------------------*/
+    
+Listas Ordenadas (ol) e Não Ordenadas (ul)   
+Listas: circle | square | 
+blank página nova | self na mesma página
+Relativo = Preso no Container
+Absoluta = Em todo o site
+
+/*---------------------------------------------------------------------------------------------------------*/
+    
+/* SÍMBOLOS */
+
+emojipedia.org
+(SEMPRE COLOCAR #x1 na FRENTE DO CÓDIGO DO EMOJI)
+&reg; | &copy; | &trade; | &euro; | &pound; | &yen; | &cent; | &Delta; ou &delta | &uarr;
+
+/* SÍMBOLOS */
+
+/*---------------------------------------------------------------------------------------------------------*/
+    
+/* CSS (cascading style sheet) */
+
+-> Link Externo <link rel="stylesheet" href="style.css"> (linka HTML e CSS)
+
+-> estilo Inline (style aplicado diretamente na linha de código) (NÃO RECOMENDADO)
+<body style="background-color: black;">
+
+@charset "UTF-8";
+
+* {} configuração global CSS
+no uso de degrade (height: 100%;
+
+background-image: linear-gradient(45deg, #ffffff, #dddddd); ângulo em graus
+background-image: linear-gradient(to left, #ffffff, #dddddd); ângulo direcionado
+background-image: linear-gradient(to left, #ffffff 20%, #dddddd); ângulo direcionado (o 20% mostra a quantidade em porcetagem que a cor terá no degradê)
+background-image: radial-gradient(circle, #ffffff, #dddddd); degradê circular
+
+background-attachment: fixed; (mantem fundo fixo)
+
+Obs: podem ser usados no mesmo arquvivo, inline, intero ou externo !
+
+/* CSS (cascading style sheet) */
+
+/*---------------------------------------------------------------------------------------------------------*/
+    
+/* CORES */
+
+PSICOLOGIA DAS CORES
+
+extensão chrome (colorzilla)
+
+/* CORES */
+
+/*---------------------------------------------------------------------------------------------------------*/
+    
+/* FONTES */
+
+no google -> css web safe font combinations - w3schools.com
+
+medidas absolutas -> cm, mm, in, px, pt, pc (px recomendado)
+medidas relativas -> em, ex, rem, vw, vh, % (em recomendado) em relativo ao tamanho natural
+
+font-weight -> peso da fonte -> lighter normal bold bolder / numéricas de 100 a 900 (porém nem todas as fontes tem todos os tamanhos)
+font-style -> normal, italic
+text-decoration -> sublinhado
+
+//SHORTHAND FONT//
+font-style -> font-weight -> font-size -> font-family
+
+usar google-fonts e apenas usar o @import
+
+ @font-face {
+            font-family: ;
+            src: url('love larry.ttf');
+			
+			tipos de format()
+			opentype (otf)
+			truetype (ttf)
+			embedded-opentypetruetype-aat(apple)
+			svg
+extensão chrome (fonts ninja)
+
+whatfontis | fontsquirrel | myfonts
+
+/* FONTES */
+
+text-indent: 20px; (inicio do parágrafo)	
+
+/*---------------------------------------------------------------------------------------------------------*/
+    
+/* SELETORES PERSONALIZADOS */
+
+em HTML -> id="exemplo" | em HTML id(unico) = # | em HTML class(multiplo) = . (class também pode ter mais de 1 apenas separados por espaço)
+id sobrepõe class
+em CSS -> #exemplo
+
+// PSEUDO CLASSES : (definem estado de elementos dentro do HTML//
+
+display: none; (esconde o elemento)
+
+ex:  div > p {
+            display: none;
+        }
+		
+hover ( ao passar o mouse por cima)
+
+	div:hover > p {
+            display: block;
+            color: aquamarine;
+            background-color: blue;
+            width: 100px;
+            text-align: center;
+        }
+
+ação para elemento dentro da div -> div > p	
+
+// PSEUDO ELEMENTOS	:: (agem no conteúdo periférico do elemento)
+
+# = id
+. = class
+: = pseudo-class
+:: = pseudo-element
+> = children
+
+/* SELETORES PERSONALIZADOS */
+
+/*---------------------------------------------------------------------------------------------------------*/
+    
+/* BOX MODEL */
+
+altura -> height
+largura -> width
+linha em volta -> border
+preenchimento, acochoamento -> padding
+margem -> margin
+contorno, traçado -> outline
+
+TIPOS DE CAIXA
+BOX LEVEL -> pular para linha de baixo, largura total da tela (ISOLADO) ex: <div> <h1> <main> <header> <nav> <article> <aside> <footer> <video>
+INLINE-LEVEL -> ele contunua o conteúdo na linha (CONTINUIDADE) ex: <span> <a> <code> <small> <strong> <em> <sup> <sub> <label> <button> <input> <select>
+
+useragent - é sempre meu navegador
+
+DEV TOOLS -> clicar botão direito + spec (mexer no site sem mudar o original)
+
+margin: auto; centraliza automáticamente
+outline -> linha dentro da margem
+
+border-style: solid; (dashed, dotted, double, groove)
+
+SIMPLIFICANDO (shorthands)
+sempre no sentido horário, se todas as medidas forem iguais colocar apenas 1 vez !
+
+display: (inline, block, inline-block)
+
+/* BOX MODEL */
+
+/*---------------------------------------------------------------------------------------------------------*/
+    
+/* GROUPING TAGS */
+
+<header> cabeçalho
+<main> conteúdo
+<footer> rodapé
+<nav> menu de navegação
+<article> artigos de texto
+
+    padding: 1px 0px 10px 0px;
+    background-color: red;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;  
+    text-decoration: none;
+	box-shadow: 1px 1px 1px black; (horizontal, vertical, expansão, cor)
+	border-radius: 6px (também pode ser feito em porcentagem)
+	
+        h1 {
+            border: 20px solid black;
+            border-image-source: url('borda.png');
+            border-image-slice: 20;
+            border-image-repeat: repeat; /*stretch* esticar*/
+        }
+
+/* GROUPING TAGS */
+
+/*---------------------------------------------------------------------------------------------------------*/
+
+

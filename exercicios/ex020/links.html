@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        body {
+            background-color: lightsteelblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            color: rgb(73, 73, 73);
+        }
+
+        a:visited {
+            color: rgb(104, 18, 18);
+        }
+
+        a::after {
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: lighter;
+            color: rgb(0, 82, 82);
+        }
+
+        a::before {
+            content: '->';
+            text-decoration: none;
+            font-weight: lighter;
+            color: rgb(0, 82, 82);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Links Personalizados</h1>
+    <ul>
+        <li><a href="http://twitch.com/w4rprophet">Twitch</a></li>
+        <li><a href="http://www.youtubr.com/w4rprophet">YouTube</a></li>
+    </ul>
+</body>
+</html>

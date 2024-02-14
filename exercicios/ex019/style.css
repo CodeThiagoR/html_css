@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(183, 226, 252);
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 128);
+}
+
+h1#principal {
+    color: black;
+}
+
+h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(0, 0, 226);
+}
+
+.inter {
+    color: blueviolet;
+}
+
+.avan {
+    color: brown;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 140, 255);
+}
