@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: rgb(230, 230, 230);
+        }
+
+        caption {
+            font-size: 1em;
+            padding: 5px;
+            background-color: rgb(197, 197, 197);
+
+        }
+
+        h1 {
+            background-color: red;
+            width: 400px;
+            text-align: center;
+            color: white;
+            font-size: 1.5em;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1; 
+            background-color: rgb(70, 70, 70)
+        }
+
+        thead, tfoot {
+            background-color: rgb(70, 70, 70);
+            color: white;
+        }
+
+        .state {
+          background-color: rgb(51, 139, 240);
+        }
+
+        .states {
+            background-color: orange;
+        }
+
+        .num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>USO DE TABELAS GRANDES</h1>
+    <!--Anatomia para tabelas grandes
+    TABLE
+        CAPTION - LEGENDA
+        THEAD -> TR, TD, TH
+        TBODY -> TR, TD, TH
+        TFOOT -> TR, TD, TH
+    -->
+    <table>
+        <caption>Populações do Sul e Sudeste do Brasil</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estados</th>
+                <th scope="col" style="width: 120px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th class="state">Sudeste</th>
+                <th class="state"></th>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr> 
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">76.250.426</td>
+            </tr>  
+            <tr>
+                <td></td>
+                <td class="num"><strong>160.603.209</strong></td>
+            </tr>
+            <tr>
+                <th class="states">Sul</th>
+                <th class="states"></th>
+            </tr>
+            <tr>
+                <td>Rio Grande Sul</td>
+                <td class="num">10.693.929</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">6.248.436</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">10.444.526</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="num"><strong>27.332.891</strong></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row">Total de Habitantes</th>
+            <td class="num"><strong>187.936.100</strong></td>
+        </tfoot>
+
+    </table>
+
+    
+</body>
+</html>
