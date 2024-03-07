@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">
+            menu
+            </span>
+        <menu id="menu">
+            
+            <ul>
+                <li>Opção 1</li>
+                <li>Opção 2</li>
+                <li>Opção 3</li>
+                <li>Opção 4</li>
+                <li>Opção 5</li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Mídia Queries</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus obcaecati sed ipsum repellendus nisi, corporis ipsam libero! Blanditiis, quaerat ab maiores ex sit numquam nemo pariatur aut harum totam facere. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat tenetur molestiae consectetur at totam animi obcaecati, velit eius ducimus unde saepe et aliquid aliquam ipsam deserunt pariatur neque rem hic. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem repellendus enim earum esse reprehenderit pariatur. Cumque non error, quia labore officia ipsa laboriosam voluptatem dolore! Adipisci voluptate eligendi facere odio!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus obcaecati sed ipsum repellendus nisi, corporis ipsam libero! Blanditiis, quaerat ab maiores ex sit numquam nemo pariatur aut harum totam facere. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat tenetur molestiae consectetur at totam animi obcaecati, velit eius ducimus unde saepe et aliquid aliquam ipsam deserunt pariatur neque rem hic. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem repellendus enim earum esse reprehenderit pariatur. Cumque non error, quia labore officia ipsa laboriosam voluptatem dolore! Adipisci voluptate eligendi facere odio!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus obcaecati sed ipsum repellendus nisi, corporis ipsam libero! Blanditiis, quaerat ab maiores ex sit numquam nemo pariatur aut harum totam facere. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat tenetur molestiae consectetur at totam animi obcaecati, velit eius ducimus unde saepe et aliquid aliquam ipsam deserunt pariatur neque rem hic. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem repellendus enim earum esse reprehenderit pariatur. Cumque non error, quia labore officia ipsa laboriosam voluptatem dolore! Adipisci voluptate eligendi facere odio!</p>
+        </article>
+    </main>
+    <script>
+        function clickMenu() {
+            if (menu.style.display == 'block') {
+                menu.style.display = 'none'
+            } else {
+                menu.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
